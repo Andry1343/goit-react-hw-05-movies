@@ -3,7 +3,5 @@ import styled from '@emotion/styled';
 export const Title = styled.h1`
   display: flex;
   justify-content: center;
-  font-size: 40px;
+  font-size: 20px;
 `;
-
-
