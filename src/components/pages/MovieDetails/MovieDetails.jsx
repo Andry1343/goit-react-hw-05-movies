@@ -17,7 +17,7 @@ import {
 import { MyLink } from './MovieDetails.styled';
 import { FaArrowLeft } from 'react-icons/fa';
 
-export default function MovieDetails() {
+export const MovieDetails = () => {
   const [movie, setMovie] = useState(null);
   const { movieId } = useParams();
   const [error, setError] = useState(null);
@@ -76,4 +76,6 @@ export default function MovieDetails() {
       </Suspense>
     </>
   );
-}
+};
+
+export default MovieDetails;

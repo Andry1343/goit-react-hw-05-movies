@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import { CastItem } from 'components/CastItem/CastItem';
 import { List } from './Cast.styled';
 
-export default function Cast() {
+export const Cast = () => {
   const [cast, setCast] = useState([]);
   const { movieId } = useParams();
   const [error, setError] = useState(null);
@@ -25,4 +25,6 @@ export default function Cast() {
       </List>
     </>
   );
-}
+};
+
+export default Cast;

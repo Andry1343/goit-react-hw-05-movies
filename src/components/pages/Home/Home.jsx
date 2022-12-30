@@ -1,6 +1,6 @@
 import { Title } from './Home.styled';
 import { useEffect, useState } from 'react';
-import { MovieList } from 'components/MovieList/MovieList';
+import { MovieList } from "components/MovieList/MovieList";
 import { getTrendingMovies } from 'components/getMovies';
 
 export const Home = () => {
@@ -8,10 +8,8 @@ export const Home = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    getTrendingMovies()
-      .then(movies => setMovies(movies.data.results))
-      .catch(error => setError(error.message));
-  }, []);
+    getTrendingMovies().then(movies => setMovies(movies.data.results)).catch(error => setError(error.message))
+  }, [])
 
   return (
     <>
@@ -21,3 +19,5 @@ export const Home = () => {
     </>
   );
 };
+
+export default Home;
