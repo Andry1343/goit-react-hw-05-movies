@@ -10,7 +10,7 @@ export const Layout = () => {
           <StyledLink to="/" end>
             Home
           </StyledLink>
-          <StyledLink to="movies">Movies</StyledLink>
+          <StyledLink to="movies">Movie search</StyledLink>
         </nav>
       </Header>
       <Suspense fallback={<div>Loading...</div>}>
